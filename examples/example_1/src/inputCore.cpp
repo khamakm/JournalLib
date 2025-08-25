@@ -33,7 +33,7 @@ void InputCore::input_parce(std::string input) {
                     << "                                            the message by default.\n"
                     << "    help                                    Show help.\n"
                     << "    exit                                    Exit from program.\n"
-                    << "    <LEVEL>: \"LOW\" (or \"1\"), \"MEDIUM\" (or \"2\"), \"HIGHT\" (or \"3\")\n" 
+                    << "    <LEVEL>: \"LOW\", \"MEDIUM\", \"HIGHT\"\n" 
                     << "    Example: message MEDIUM \"text\"\n"
                     << "             setlevel HIGHT \"text\"\n"
                     << "    For use default importance level:\n"
