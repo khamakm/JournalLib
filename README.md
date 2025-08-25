@@ -20,3 +20,15 @@ make run
 make tests
 ```
 Uses the input data set from the `test_input.txt` file.
+
+### Clear temp files
+``` bash
+make clear
+```
+
+### Clear all build files
+``` bash
+make clear_all
+```
+
+
