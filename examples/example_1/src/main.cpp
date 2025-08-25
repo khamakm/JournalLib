@@ -34,6 +34,8 @@ int main(int argc, char* argv[]) {
     InputCore inputcore = InputCore(journal);
     JournalWorker journal_worker = JournalWorker(journal);
 
+    inputcore.input_parce("help");
+
     while (true) {
         std::cout << "\n> ";
         std::string input = "";
