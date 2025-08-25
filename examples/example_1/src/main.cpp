@@ -35,7 +35,7 @@ int main(int argc, char* argv[]) {
     JournalWorker journal_worker = JournalWorker(journal);
 
     while (true) {
-        std::cout << "> ";
+        std::cout << "\n> ";
         std::string input = "";
         std::getline(std::cin, input);
         inputcore.input_parce(input);

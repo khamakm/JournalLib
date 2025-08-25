@@ -22,7 +22,7 @@ void InputCore::input_parce(std::string input) {
     else if (input.rfind("setlevel ", 0) == 0) {
         std::string def_level = input.substr(9);
         if (!JournalCore::is_correct_level(def_level)) 
-            std::cout << "Wrong importance level. Type \"help\" for more information." << std::endl ;
+            std::cout << "\nWrong importance level. Type \"help\" for more information." << std::endl ;
         set_level(def_level);
     }
     else if (input == "exit") exit(0);
@@ -42,7 +42,7 @@ void InputCore::input_parce(std::string input) {
     else if (input.rfind("message ", 0) == 0) {
         std::string options = input.substr(8);
         if (!InputCore::is_correct_message(options)) {
-            std::cout << "Wrong command structure. Type \"help\" for more information." << std::endl;
+            std::cout << "\nWrong command structure. Type \"help\" for more information." << std::endl;
             return;
         }
 
@@ -61,7 +61,7 @@ void InputCore::input_parce(std::string input) {
         set_level(level);
         set_message(message);
     } 
-    else std::cout << "Command not found. Type \"help\" for more information" << std::endl;
+    else std::cout << "\nCommand not found. Type \"help\" for more information" << std::endl;
 }
 
 std::string InputCore::get_cur_datetime() {
