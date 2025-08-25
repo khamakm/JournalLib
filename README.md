@@ -23,12 +23,12 @@ Uses the input data set from the `test_input.txt` file.
 
 ### Clear temp files
 ``` bash
-make clear
+make clean
 ```
 
 ### Clear all build files
 ``` bash
-make clear_all
+make clean_all
 ```
 
 
