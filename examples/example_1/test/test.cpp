@@ -26,7 +26,6 @@ int main(int argc, char* argv[]) {
         if (file_name == "exit") exit(0);
         if (JournalCore::is_correct_file(file_name)) break;
         std::cout << "\nWrong type of the file." << std::endl;
-        // std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 
     std::string def_level;
@@ -40,7 +39,6 @@ int main(int argc, char* argv[]) {
         if (def_level == "exit") exit(0);
         if (JournalCore::is_correct_level(def_level)) break;
         std::cout << "\nWrong importance level." << std::endl;
-        // std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 
     JournalCore journal = JournalCore(file_name, def_level);
@@ -59,6 +57,5 @@ int main(int argc, char* argv[]) {
         if (inputcore.get_level() == "") continue;
         journal_worker.add_task(inputcore.get_datetime(), inputcore.get_level(), inputcore.get_message());
         inputcore.clear_input();
-        // std::this_thread::sleep_for(std::chrono::milliseconds(100));
     }
 }
